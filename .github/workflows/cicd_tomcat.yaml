@@ -26,7 +26,7 @@ jobs:
       - name: Deploy WAR to Tomcat
         run: |
           WAR_FILE=$(ls target/*.war | head -n 1)
-          APP_NAME=KARTHIK PATEL APP
+          APP_NAME=b17app
 
           curl -u "${{ secrets.TOMCAT_USERNAME }}:${{ secrets.TOMCAT_PASSWORD }}" \
             --upload-file "$WAR_FILE" \
